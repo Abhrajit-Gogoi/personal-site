@@ -6,6 +6,6 @@ there is also a lot of hope for improvement in the future.
 
 hope you enjoy it till then!!!
 
-demo link: 
+demo link: https://abhrajit-gogoi.github.io/personal-site/
 
 ![](image.png)
