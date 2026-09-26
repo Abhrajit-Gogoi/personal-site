@@ -1,9 +1,11 @@
+/*[cite: 2] */
 :root {
-    --smoky-rose: #e1d35a;
-    --taupe-grey: #8b6d23;
-    --vintage-lavender: #e5eb46;
-    --soft-periwinkle: #e2c20e;
-    --periwinkle: #f5efcc;
+    --bg-base: #f5f3d9;
+    --shadow-light: #efedbe;
+    --shadow-dark: #c3c6a3;
+    --accent-yellow: #040404;
+    --text-primary: #4a5568;
+    --text-secondary: #718096;
 }
 
 * {
@@ -14,58 +16,86 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--periwinkle);
-    color: #ffffff;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
     line-height: 1.6;
+    padding: 2rem;
 }
 
 header {
-    background-color: var(--taupe-grey);
+    background-color: var(--bg-base);
     padding: 2rem;
     text-align: center;
-    border-bottom: 4px solid var(--smoky-rose);
+    border-radius: 16px;
+    box-shadow: 9px 9px 16px var(--shadow-dark), 
+               -9px -9px 16px var(--shadow-light);
+    margin-bottom: 2.5rem;
 }
 
 header h1 {
-    color: var(--periwinkle);
+    color: var(--accent-yellow);
     margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(163, 177, 198, 0.4);
 }
 
 header p {
-    color: #ffffff;
+    color: var(--text-secondary);
 }
 
 main {
-    padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 
 section {
-    background-color: var(--vintage-lavender);
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid var(--soft-periwinkle);
+    background-color: var(--bg-base);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 9px 9px 16px var(--shadow-dark), 
+               -9px -9px 16px var(--shadow-light);
+}
+
+section h2 {
+    color: var(--accent-yellow);
+    margin-bottom: 1.5rem;
 }
 
 .card-container {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .card {
     flex: 1;
-    background-color: var(--soft-periwinkle);
-    padding: 1rem;
-    border-radius: 6px;
+    background-color: var(--bg-base);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: inset 6px 6px 10px var(--shadow-dark), 
+                inset -6px -6px 10px var(--shadow-light);
+}
+
+.card h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: var(--text-secondary);
 }
 
 footer {
-    background-color: var(--smoky-rose);
+    background-color: var(--bg-base);
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 1.5rem;
+    margin-top: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 9px 9px 16px var(--shadow-dark), 
+               -9px -9px 16px var(--shadow-light);
+}
+
+footer p {
+    color: var(--text-secondary);
 }
